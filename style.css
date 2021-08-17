@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hamburger{
+    padding: 10px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+}
+.hamburger_box{
+    width: 60px;
+    height: 10vh;
+    display: inline-block;
+    position: relative;
+}
+.hamburger_inner{
+    width: 100%;
+    height: 7px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+.hamburger_inner::before,
+.hamburger_inner::after{
+    content: '';
+    width: 100%;
+    height: 7px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+}
+.hamburger_inner::before {
+    top: -17px;
+}
+.hamburger_inner::after {
+    top: 17px;
+}
+
+nav{
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1F203A;
+}
+.logoBook{
+    width: 120px;
+    height: 120px;
+    color: white;
+}
+.side{
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+article{
+    background-color: #FCEB21;
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.articleText{
+    font-size: 3.8rem;
+    width: 70%;
+}
+.arrow{
+    width: 100px;
+    height: 200px;
+    margin-top: 5%;
+}
+.portfolio{
+
+}
+.portfolioPhoto{
+    background: #1F203A url(photo1.jpg) no-repeat center/cover;
+    width: 80vw;
+    height: 50vh;
+    position: absolute;
+    top: 80vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.portfolioLogo{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+    font-size: 4rem;
+    color: white;
+    letter-spacing: 15px;
+}
+.designSection{
+    width: 100vw;
+    background-color: #1F203A;
+    padding-top: 50vh;
+}
+.designTitle{
+    text-align: left;
+    font-size: 5rem;
+    color: white;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+}
+.designText{
+    font-size: 3rem;
+    color: white;
+    text-align: left;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 1%;
+    letter-spacing: 10px;
+}
+.designText2{
+    font-size: 3rem;
+    color: white;
+    text-align: left;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    line-height: 1.9;
+}
+.button1 {
+    color: black;
+    font-weight: bold;
+    background-color: #FCEB21;
+    padding: 8px 18px;
+    height: 130px;
+    width: 400px;
+    font-size: 2rem;
+}
+.divButton{
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 7%;
+}
+.button1:hover{
+    cursor: pointer;
+    background-color: white;
+}
+.gallery{
+    width: 100vw;
+    background-color: #1F203A;
+    padding: 10vh 0;
+}
