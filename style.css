@@ -40,7 +40,6 @@
 .hamburger_inner::after {
     top: 17px;
 }
-
 nav{
     height: 10vh;
     width: 100vw;
@@ -64,31 +63,29 @@ nav{
 article{
     background-color: #FCEB21;
     width: 100vw;
-    height: 80vh;
+    height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     text-align: center;
 }
 .articleText{
-    font-size: 3.8rem;
-    width: 70%;
+    font-size: 3.3rem;
+    width: 75%;
+    margin: 0 auto;
+    line-height: 1.5;
 }
 .arrow{
     width: 100px;
     height: 200px;
     margin-top: 5%;
 }
-.portfolio{
-
-}
 .portfolioPhoto{
     background: #1F203A url(photo1.jpg) no-repeat center/cover;
     width: 80vw;
     height: 50vh;
     position: absolute;
-    top: 80vh;
+    top: 70vh;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -106,22 +103,19 @@ article{
     width: 100vw;
     background-color: #1F203A;
     padding-top: 50vh;
+    padding-bottom: 5vh;
 }
 .designTitle{
     text-align: left;
     font-size: 5rem;
     color: white;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 5%;
+    padding: 5% 10% 0 10%;
 }
 .designText{
     font-size: 3rem;
     color: white;
     text-align: left;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 1%;
+    padding: 1% 10% 0 10%;
     letter-spacing: 10px;
 }
 .designText2{
@@ -141,11 +135,15 @@ article{
     height: 130px;
     width: 400px;
     font-size: 2rem;
+    letter-spacing: 3px;
 }
 .divButton{
-    padding-left: 10%;
-    padding-right: 10%;
-    margin-top: 7%;
+    background-color: #1F203A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
 }
 .button1:hover{
     cursor: pointer;
@@ -154,5 +152,343 @@ article{
 .gallery{
     width: 100vw;
     background-color: #1F203A;
-    padding: 10vh 0;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    overflow: hidden;
+    grid-template-columns: 1fr;
+
+}
+.over{
+    width: 80vw;
+    overflow: hidden;
+    height: 60vh;
+    margin-top: 50px;
+}
+.photo{
+    transition: all 0.3s ease-out;
+    width: 100%;
+    height: 100%;
+}
+.photo2{
+    background: #1F203A url(photo2.jpg) no-repeat center/cover;
+}
+.photo3{
+    background: #1F203A url(photo3.jpg) no-repeat left/cover;
+}
+.photo4{
+    background: #1F203A url(photo4.jpg) no-repeat center/cover;
+}
+.photo5{
+    background: #1F203A url(photo5.jpg) no-repeat center/cover;
+}
+.photo6{
+    background: #1F203A url(photo6.jpg) no-repeat center/cover;
+}
+.photo7{
+    background: #1F203A url(photo7.jpg) no-repeat center/cover;
+}
+.photo8{
+    background: #1F203A url(photo8.jpg) no-repeat right/cover;
+}
+.photo9{
+    background: #1F203A url(photo9.jpg) no-repeat center/cover;
+}
+.photo10{
+    background: #1F203A url(photo10.jpg) no-repeat right/cover;
+}
+.photo:hover{
+    transform:scale(1.1);
+    opacity: 0.8;
+}
+.contact{
+    width: 100vw;
+    background-color: #FCEB21;
+    padding: 5vh;
+}
+.inputs{
+    width: 75vw;
+    height: 5vh;
+    font-size: 2rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    background:  #FCEB21 linear-gradient(90deg, #222, #222) bottom/100% 4px no-repeat;
+    padding: 30px;
+    margin-bottom: 50px;
+}
+.input{
+    padding-top: 30px;
+}
+.inputs:focus{
+    border-top: 5px solid #1F203A;
+    border-left:  5px solid #1F203A;
+    border-right:  5px solid #1F203A;
+    outline: 4px solid white;
+}
+.inputs::placeholder{
+    opacity: 0.8;
+}
+.text2{
+    width: 75vw;
+    height: 300px;
+    min-width: 50vw;
+    max-width: 90vw;
+    max-height: 50vh;
+    resize: none;
+}
+.submitButton{
+    color: black;
+    font-weight: bold;
+    background-color: #FCEB21;
+    padding: 8px 18px;
+    height: 130px;
+    width: 400px;
+    font-size: 2rem;
+    letter-spacing: 3px;
+    border: 4px solid black;
+}
+.contactButton{
+    padding-top: 8%;
+}
+.contactHeader{
+    background-color: #FCEB21;
+    width: 100%;
+}
+.contactText{
+    padding: 8vw;
+    font-size: 5rem;
+    font-weight: bold;
+}
+.contactLogos{
+    background-color: #FCEB21;
+    width: 100vw;
+    padding: 8vw;
+}
+.logos{
+    width: 90px;
+    height: 90px;
+    margin-right: 50px;
+    margin-top: -10%;
+    color: black;
+}
+.phone{
+    background-color: #FCEB21;
+    padding-top: 4%;
+    padding-bottom: 20%;
+}
+.numbers{
+    font-size: 4.5rem;
+    letter-spacing: 8px;
+    padding-left: 8vw;
+    padding-top: 30px;
+}
+.footer1{
+    background-color: #1F203A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.footer1 p{
+    color: white;
+    font-size: 2.2rem;
+    width: 100vw;
+    padding: 10%;
+    line-height: 1.6;
+}
+.footer2{
+    background-color: #333333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.footer2 p{
+    color: white;
+    font-size: 2rem;
+    width: 100vw;
+    padding: 10%;
+}
+@media (min-width: 1200px) {
+    .hamburger_box{
+        width: 32px;
+    }
+    .hamburger_inner{
+        width: 100%;
+        height: 4px;
+    }
+    .hamburger_inner::before,
+    .hamburger_inner::after{
+        width: 100%;
+        height: 4px;
+    }
+    .hamburger_inner::before {
+        top: -12px;
+    }
+    .hamburger_inner::after {
+        top: 12px;
+    }
+    .logoBook{
+        width: 60px;
+        height: 60px;
+        color: white;
+    }
+    .side{
+        padding-left: 100px;
+    }
+    .logo{
+        padding-right: 140px;
+    }
+    .articleText{
+        font-size: 2rem;
+        width: 50%;
+    }
+    .portfolioPhoto{
+        width: 30vw;
+        height: 80vh;
+        position: absolute;
+        left: 35%;
+        transform: translateX(-50%);
+        top: 20%;
+    }
+   .rightSideArticle{
+       position: absolute;
+       left: 50%;
+       padding-right: 20%;
+       padding-left: 3%;
+       bottom: 9%;
+   }
+   .articleText{
+       width: 100%;
+       line-height: 1.9;
+   }
+   .arrow{
+       width: 50px;
+       height: 150px;
+       margin-bottom: 45px;
+   }
+   .portfolioLogo{
+       font-size: 7rem;
+        left: 72%;
+   }
+   .designText2{
+       font-size: 1.7rem;
+       width: 60vw;
+   }
+   .designSection{
+       padding-left: 20%;
+       padding-top: 30vh;
+       padding-bottom: 5vh;
+   }
+   .button1{
+       height: 70px;
+       width: 250px;
+       font-size: 1rem;
+       letter-spacing: 2px;
+   }
+   .designTitle{
+       font-size: 8rem;
+   }
+   .gallery{
+       grid-template-columns: 1fr 1fr 1fr;
+       padding-left: 20%;
+       padding-right: 20%;
+   }
+    .over{
+        width: 20vw;
+        overflow: hidden;
+        height: 40vh;
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .containerContact{
+        display: flex;
+        justify-content: center;
+        background-color: #FCEB21;
+        width: 100vw;
+        padding-top: 5%;
+        gap: 100px;
+    }
+    .rightSideContact{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+    .inputs{
+        width: 100%;
+        height: 5vh;
+        font-size: 1.1rem;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        outline: none;
+        background:  #FCEB21 linear-gradient(50deg, black, black)bottom/100% 1px no-repeat;
+        margin-bottom: 30px;
+    }
+    .text2{
+        height: 100px;
+        min-width: 60%;
+        max-height: 40vh;
+    }
+    .submitButton{
+        color: black;
+        font-weight: bold;
+        background-color: #FCEB21;
+        padding: 8px 18px;
+        height: 50px;
+        width: 150px;
+        font-size: 1rem;
+        letter-spacing: 3px;
+        border: 2px solid black;
+    }
+    .contact{
+        padding: 0 0 0 30%;
+    }
+    .contactText{
+        font-size: 3.2rem;
+        padding:0;
+    }
+    .logos{
+        width: 50px;
+        height: 50px;
+        margin: 0;
+        padding: 0;
+    }
+    .contactLogos{
+        padding:0;
+        margin-top: 25px;
+    }
+    .numbers{
+        font-size: 2rem;
+        letter-spacing: 6px;
+        margin: 0;
+        padding: 0;
+    }
+    .phone{
+        margin-top: 100px;
+        padding: 0;
+    }
+    .contactButton{
+        padding-bottom: 20%;
+    }
+    .footer1 p{
+        color: white;
+        font-size: 1rem;
+        width: 30vw;
+        padding: 3%;
+        line-height: 1.6;
+    }
+    .footer2 p{
+        color: white;
+        font-size: 1rem;
+        width: 30vw;
+        padding: 2%;
+        line-height: 1.6;
+    }
+
 }
